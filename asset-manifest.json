@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/countryRanking/static/css/main.86ffaf1f.css",
+    "main.js": "/countryRanking/static/js/main.c6cf4935.js",
+    "static/js/453.732e11e7.chunk.js": "/countryRanking/static/js/453.732e11e7.chunk.js",
+    "index.html": "/countryRanking/index.html",
+    "main.86ffaf1f.css.map": "/countryRanking/static/css/main.86ffaf1f.css.map",
+    "main.c6cf4935.js.map": "/countryRanking/static/js/main.c6cf4935.js.map",
+    "453.732e11e7.chunk.js.map": "/countryRanking/static/js/453.732e11e7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.86ffaf1f.css",
+    "static/js/main.c6cf4935.js"
+  ]
+}
