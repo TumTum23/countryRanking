@@ -21,7 +21,7 @@ A modern React application that displays and filters country data with comprehen
 ```bash
 # Clone the repository
 git clone <your-repo-url>
-cd fe-test
+cd repo
 
 # Install dependencies
 npm install
