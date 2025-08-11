@@ -1,0 +1,216 @@
+.sidebarControls {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-large);
+  background: var(--color-background-primary);
+}
+
+.sidebarControl {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-extra-small);
+  margin-bottom: var(--spacing-large);
+}
+
+.sidebarControl select {
+  background: var(--color-background-secondary);
+  color: var(--color-text-primary);
+  border: 1.5px solid var(--color-border-default);
+  border-radius: var(--radius-medium);
+  padding: var(--spacing-extra-small) var(--spacing-medium);
+  font-size: var(--spacing-medium);
+  margin-top: var(--spacing-compact-micro);
+  outline: none;
+  transition: border 0.2s, box-shadow 0.2s;
+  box-shadow: none;
+  appearance: none;
+}
+
+.sidebarControl select:focus {
+  border: 1.5px solid var(--color-accent-focus);
+  box-shadow: 0 0 0 2px #23253244;
+}
+
+.sidebarControl select:hover {
+  border: 1.5px solid var(--color-accent-focus);
+}
+
+.customSelectWrapper {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.customSelectWrapper select {
+  width: 100%;
+  padding-right: 2.2em;
+  background: var(--color-background-secondary);
+  color: var(--color-text-primary);
+  border: 1.5px solid var(--color-border-default);
+  border-radius: var(--radius-extra-large);
+  padding: var(--spacing-extra-small) var(--spacing-medium);
+  font-size: var(--spacing-medium);
+  margin-top: var(--spacing-compact-micro);
+  outline: none;
+  transition: border 0.2s, box-shadow 0.2s;
+  box-shadow: none;
+  appearance: none;
+  cursor: pointer;
+}
+
+.customSelectWrapper select:focus {
+  border: 1.5px solid var(--color-accent-focus);
+  box-shadow: 0 0 0 2px #23253244;
+}
+
+.customSelectWrapper select::-webkit-scrollbar {
+  border-radius: var(--radius-extra-large);
+}
+
+.customSelectWrapper select option {
+  border-radius: var(--radius-extra-large);
+  background: var(--color-background-secondary);
+  color: var(--color-text-primary);
+}
+
+.customSelectArrow {
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  right: 1.1em;
+  transform: translateY(-50%);
+  width: 0.9em;
+  height: 0.9em;
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.customSelectArrow::after {
+  content: '';
+  display: block;
+  width: 0.7em;
+  height: 0.7em;
+  border-right: 2px solid var(--color-text-secondary);
+  border-bottom: 2px solid var(--color-text-secondary);
+  transform: rotate(45deg);
+  margin-top: 0.1em;
+}
+
+.regionPills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-extra-small);
+}
+
+.pill {
+  border: none;
+  background: var(--color-background-secondary);
+  color: var(--color-text-primary);
+  border-radius: var(--radius-extra-large);
+  padding: var(--spacing-compact-micro) var(--spacing-compact-small-alt);
+  font-size: var(--spacing-medium);
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  border: 1.5px solid var(--color-border-default);
+}
+
+.pill.selected {
+  background: var(--color-background-hover);
+  color: #fff;
+  border-color: var(--color-accent-focus);
+}
+
+.statusControls {
+  gap: var(--spacing-large);
+}
+
+.sidebarControl input[type="checkbox"] {
+  display: none;
+}
+
+.customCheckbox {
+  display: flex;
+  align-items: center;
+  gap: 0.6em;
+  cursor: pointer;
+  font-size: var(--spacing-medium);
+  font-weight: 500;
+  color: var(--color-text-primary);
+  margin-bottom: 0.7em;
+  user-select: none;
+}
+
+.customCheckboxBox {
+  width: 1.25em;
+  height: 1.25em;
+  border-radius: 5px;
+  border: 2px solid var(--color-border-default);
+  background: var(--color-background-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border 0.2s, background 0.2s;
+  position: relative;
+  box-sizing: border-box;
+}
+
+input[type="checkbox"]:checked + .customCheckboxBox {
+  background: #3b82f6;
+  border-color: #3b82f6;
+}
+
+input[type="checkbox"]:checked + .customCheckboxBox::after {
+  content: '';
+  display: block;
+  width: 0.5em;
+  height: 0.25em;
+  border-left: 2.5px solid #fff;
+  border-bottom: 2.5px solid #fff;
+  border-radius: 0.5px;
+  position: absolute;
+  left: 0.23em;
+  top: 0.38em;
+  transform: rotate(-45deg);
+  box-sizing: border-box;
+}
+
+input[type="checkbox"]:not(:checked) + .customCheckboxBox::after {
+  content: '';
+  display: none;
+}
+
+.sidebarControl label {
+  color: var(--color-text-primary);
+}
+
+.sidebarControl span {
+  color: var(--color-text-primary);
+}
+
+/* Mobile responsive styles */
+@media (max-width: 900px) {
+  .sidebarControls {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--spacing-medium);
+  }
+  
+  .sidebarControl {
+    margin-bottom: var(--spacing-extra-small);
+  }
+}
+
+@media (max-width: 600px) {
+  .customCheckbox {
+    font-size: var(--spacing-compact-micro-small);
+    margin-bottom: 0.5em;
+  }
+  
+  .customCheckboxBox {
+    width: 1.05em;
+    height: 1.05em;
+  }
+} 

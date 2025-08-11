@@ -1,3 +1,49 @@
+:root {
+  /* Colors */
+  --color-background-primary: #181a20;
+  --color-background-secondary: #232532;
+  --color-background-hover: #3a3d4d;
+  --color-border-default: #35374a;
+  --color-text-primary: #f3f4f6;
+  --color-text-secondary: #bfc1d1;
+  --color-accent-focus: #5a5d7a;
+  --color-error-primary: #dc2626;
+
+  /* Spacing */
+  --spacing-extra-small: 0.5rem;
+  --spacing-small: 0.7rem;
+  --spacing-medium: 1rem;
+  --spacing-large: 1.5rem;
+  --spacing-extra-large: 2rem;
+  --spacing-xxl: 2.5rem;
+  --spacing-tiny: 0.32rem;
+  --spacing-compact: 0.85rem;
+  --spacing-compact-small: 0.7rem;
+  --spacing-compact-medium: 0.9rem;
+  --spacing-compact-large: 1.1rem;
+  --spacing-compact-xl: 1.2rem;
+  --spacing-compact-tiny: 0.45rem;
+  --spacing-compact-small-alt: 0.6rem;
+  --spacing-compact-xxl: 2.2rem;
+  --spacing-compact-micro: 0.3rem;
+  --spacing-compact-large-alt: 1.1rem;
+  --spacing-compact-xl-alt: 1.3rem;
+  --spacing-compact-xxl-alt: 2.3rem;
+  --spacing-compact-xxxl: 1.15rem;
+  --spacing-compact-xxxxl: 1.25rem;
+  --spacing-compact-micro-alt: 0.95rem;
+  --spacing-compact-micro-small: 0.98rem;
+  --spacing-compact-micro-tiny: 0.875rem;
+  --spacing-compact-micro-medium: 0.97rem;
+  --spacing-compact-micro-large: 0.75rem;
+
+  /* Border Radius */
+  --radius-small: 4px;
+  --radius-medium: 8px;
+  --radius-large: 12px;
+  --radius-extra-large: 16px;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

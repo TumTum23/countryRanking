@@ -1,0 +1,31 @@
+.backBtn {
+  position: absolute;
+  top: var(--spacing-compact-xxl);
+  right: var(--spacing-compact-xxl);
+  background: var(--color-background-secondary);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius-medium);
+  padding: var(--spacing-compact-small-alt) var(--spacing-large);
+  font-size: var(--spacing-compact-large-alt);
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: background 0.2s, color 0.2s;
+  z-index: 10;
+}
+
+.backBtn:hover {
+  background: var(--color-background-hover);
+  color: #fff;
+}
+
+/* Mobile responsive styles */
+@media (max-width: 600px) {
+  .backBtn {
+    top: var(--spacing-medium);
+    right: var(--spacing-medium);
+    padding: var(--spacing-extra-small) var(--spacing-compact-small-alt);
+    font-size: var(--spacing-medium);
+  }
+} 

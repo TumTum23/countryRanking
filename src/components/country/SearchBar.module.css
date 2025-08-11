@@ -1,0 +1,45 @@
+.searchContainer {
+  position: relative;
+  display: inline-block;
+}
+
+.searchIcon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--color-text-secondary);
+  z-index: 1;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  vertical-align: middle;
+  font-size: 16px;
+  margin-top: -1px;
+}
+
+.countrySearch {
+  padding: var(--spacing-extra-small) var(--spacing-medium) var(--spacing-extra-small) var(--spacing-xxl);
+  border-radius: var(--radius-medium);
+  border: 1.5px solid var(--color-border-default);
+  font-size: var(--spacing-medium);
+  width: 320px;
+  background: var(--color-background-primary);
+  color: var(--color-text-primary);
+  transition: border 0.2s;
+}
+
+.countrySearch:focus {
+  border: 1.5px solid var(--color-accent-focus);
+  outline: none;
+}
+
+/* Mobile responsive styles */
+@media (max-width: 900px) {
+  .countrySearch {
+    width: 100%;
+    max-width: 320px;
+  }
+} 

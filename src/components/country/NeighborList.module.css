@@ -1,0 +1,52 @@
+.countryDetailNeighbors {
+  margin-top: var(--spacing-extra-small);
+  width: 100%;
+  overflow-x: auto;
+}
+
+.countryDetailNeighbors strong {
+  color: var(--color-text-primary);
+  font-size: var(--spacing-compact-large-alt);
+  font-weight: 700;
+  margin-bottom: var(--spacing-extra-small);
+  display: block;
+}
+
+.neighborList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-small);
+  margin-top: var(--spacing-extra-small);
+  overflow-x: auto;
+  max-width: 100%;
+}
+
+.neighborPill {
+  display: flex;
+  align-items: center;
+  background: var(--color-background-secondary);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius-extra-large);
+  padding: var(--spacing-extra-small) var(--spacing-compact-xl-alt);
+  font-size: var(--spacing-medium);
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+  white-space: nowrap;
+}
+
+.neighborPill img {
+  width: 28px;
+  height: 18px;
+  object-fit: cover;
+  margin-right: 0.7em;
+  border-radius: var(--radius-small);
+  box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+}
+
+.neighborPill:hover {
+  background: var(--color-background-hover);
+  color: #fff;
+} 

@@ -1,0 +1,44 @@
+.errorDisplay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-extra-large);
+  text-align: center;
+  background-color: #fef2f2;
+  border: 1px solid #fecaca;
+  border-radius: var(--radius-medium);
+  margin: var(--spacing-medium) 0;
+}
+
+.errorIcon {
+  font-size: 3rem;
+  margin-bottom: var(--spacing-medium);
+}
+
+.errorTitle {
+  color: var(--color-error-primary);
+  margin: 0 0 var(--spacing-extra-small) 0;
+  font-size: var(--spacing-compact-xxxxl);
+}
+
+.errorMessage {
+  color: #6b7280;
+  margin: 0 0 var(--spacing-medium) 0;
+  font-size: var(--spacing-medium);
+}
+
+.errorRetryBtn {
+  background-color: var(--color-error-primary);
+  color: white;
+  border: none;
+  padding: var(--spacing-extra-small) var(--spacing-medium);
+  border-radius: var(--radius-small);
+  cursor: pointer;
+  font-size: var(--spacing-compact-micro-tiny);
+  transition: background-color 0.2s;
+}
+
+.errorRetryBtn:hover {
+  background-color: #b91c1c;
+} 
